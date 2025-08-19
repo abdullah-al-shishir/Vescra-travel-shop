@@ -24,7 +24,7 @@
     />
   </head>
   <body>
-    <header class="max-w-md border justify-center m-auto mt-2">
+    <header class="max-w-md border justify-center m-auto mt-3 ml-3 mr-3">
       <div class="text-center bg-black p-1">
         <p class="text-white text-sm font-mono">
           Free Shipping for orders over $50
@@ -60,18 +60,25 @@
         </div>
       </div>
       <div
-        class="h-[600px] bg-[url('/assets/bg.jpg')] bg-cover bg-no-repeat bg-center w-full flex flex-col justify-end p-8 text-white"
+        class="relative h-[600px] w-full flex flex-col justify-end p-8 text-white"
       >
-        <h3 class="text-3xl font-bold mb-6">Explore Beyond Boundaries</h3>
-        <p class="text-xl mb-5">
-          Premium, versatile gear <br />
-          for every adventure
-        </p>
-        <button
-          class="text-white bg-transparent border border-white px-6 py-2 w-max hover:bg-white hover:text-black transition-colors duration-300 hover:cursor-pointer"
-        >
-          Shop now
-        </button>
+        <img
+          src="/assets/bg.jpg"
+          alt="Background image for adventure gear"
+          class="absolute inset-0 h-full w-full object-cover"
+        />
+        <div class="relative z-10 flex flex-col justify-end">
+          <h3 class="text-3xl font-bold mb-6">Explore Beyond Boundaries</h3>
+          <p class="text-xl mb-5">
+            Premium, versatile gear <br />
+            for every adventure
+          </p>
+          <button
+            class="text-white bg-transparent border border-white px-6 py-2 w-max hover:bg-white hover:text-black transition-colors duration-300 hover:cursor-pointer"
+          >
+            Shop now
+          </button>
+        </div>
       </div>
     </header>
     <script src="index.js"></script>
